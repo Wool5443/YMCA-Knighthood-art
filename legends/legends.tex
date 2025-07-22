@@ -1,6 +1,6 @@
 % !TeX program = lualatex
 
-\documentclass[12pt]{article}
+\documentclass[12pt, a4paper, landscape]{article}
 
 % --- Packages ---
 \usepackage{enumitem}
@@ -11,6 +11,7 @@
 \usepackage[russian]{babel}
 \usepackage{tikz}
 \usepackage{titlesec}
+\usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{wrapfig}
 
@@ -57,9 +58,34 @@ BoldItalicFont = * BoldItalic,
 
 % --- Title ---
 \begin{center}
-    {\fontspec{Segoe Script} % Убедись, что шрифт установлен в системе
+    {\fontspec{Segoe Script}
         \textcolor{bordercol}{\fontsize{36pt}{40pt}\selectfont Легенды Средневековья}
     }
 \end{center}
+
+\begin{wrapfigure}{r}{0.32\textwidth}
+    \centering
+    \includegraphics[width=0.30\textwidth]{Robin_Hood_and_Little_John-scaled.jpg}
+\end{wrapfigure}
+
+Глубоко в сердце Шервудского леса, среди вековых дубов, королевская
+дорога между Лондоном и Йорком подвергалась набегам разбойников.
+Богатые были вынуждены отдавать все, что имели, а простые люди
+уходили свободными. Нуждающиеся получали одежду, еду и кров. Эта
+банда разбойников, грабившая богатых и раздававшая добычу бедным,
+противостояла тираническому игу несправедливых лордов и шерифов.
+Кто был лидером этих борцов за социальную справедливость?
+
+\textbf{Робин Гуд}, легендарный герой-разбойник из серии английских баллад, некоторые из которых датируются по крайней мере XIV веком. Робин Гуд был мятежником, и многие из самых ярких эпизодов в рассказах о нем показывают, как он и его товарищи грабят и убивают представителей власти, а добычу отдают бедным. Их самым частым врагом был шериф Ноттингема, местный представитель центральной власти (хотя внутренние свидетельства из ранних баллад ясно показывают, что действие происходило главным образом в южном Йоркшире, а не в Ноттингемшире). Среди других врагов были богатые церковные землевладельцы. Робин с уважением относился к женщинам, бедным и людям низкого социального положения. Во многом его восстание против власти было вызвано недовольством народа законами леса, ограничивавшими права на охоту. Ранние баллады, в особенности, раскрывают жестокость, которая была неотъемлемой частью средневековой жизни.
+
+\newpage
+
+\subsection*{Источники}
+
+\begin{itemize}
+    \item \href{https://www.nottinghamcastle.org.uk/the-legend-of-robin-hood/}{www.nottinghamcastle.org.uk/the-legend-of-robin-hood/} \\
+    \item \href{https://www.historic-uk.com/HistoryUK/HistoryofEngland/Robin-Hood/}{www.historic-uk.com/HistoryUK/HistoryofEngland/Robin-Hood/} \\
+    \item \href{https://www.britannica.com/topic/Robin-Hood}{www.britannica.com/topic/Robin-Hood}
+\end{itemize}
 
 \end{document}
