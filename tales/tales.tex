@@ -1,57 +1,6 @@
 % !TeX program = lualatex
 
-\documentclass[12pt]{article}
-
-% --- Packages ---
-\usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage{fontspec}
-\usepackage{geometry}
-\usepackage{graphicx}
-\usepackage[russian]{babel}
-\usepackage{tikz}
-\usepackage{titlesec}
-\usepackage{xcolor}
-\usepackage{wrapfig}
-
-% --- Custom Colors ---
-\definecolor{pagebg}{HTML}{F0D7B6}
-\definecolor{bordercol}{HTML}{851F23}
-\pagecolor{pagebg}
-
-% --- Font ---
-\setmainfont[
-UprightFont = * Regular,
-BoldFont    = * Bold,
-ItalicFont  = * Italic,
-BoldItalicFont = * BoldItalic,
-]{Coats}
-
-% --- Section Title Style ---
-\newfontfamily\sectionfont{Coats Bold}\titleformat{\section}
-{\sectionfont\fontsize{20pt}{24pt}\selectfont\bfseries\color{bordercol}}
-{\thesection}{1em}{}
-
-\titleformat{\subsection}
-{\sectionfont\fontsize{15pt}{18pt}\selectfont\bfseries\color{bordercol}}
-{\thesection}{1em}{}
-
-% --- Page Border ---
-\AddToHook{shipout/foreground}{
-    \begin{tikzpicture}[remember picture,overlay]
-        \draw[line width=1cm, bordercol]
-            (current page.north west) rectangle (current page.south east);
-    \end{tikzpicture}
-}
-
-% --- Page Setup ---
-\geometry{margin=2.5cm}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot[C]{\thepage}
-\setlist{itemsep=0pt, topsep=8pt}
-
-\sloppy
+\input{../preamlbe.tex}
 
 \begin{document}
 
